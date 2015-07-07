@@ -19,7 +19,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
+        <div id="top-header-bar"></div>
         <aside style="width: 21.5rem; position: fixed">
             <img id="menu_icon" src="img/menu_icon.jpg" class="show" style="width: 50px; height: 50px; align:top; align:left;" onmouseover="showImg()" onmouseout="hideImg()">
             <img id="toolbar" src="img/toolbar.png" class="hide" onmouseover="showImg()" onmouseout="hideImg()">
@@ -48,6 +48,15 @@
         <style type="text/css">
             .show{display:block;}
             .hide{display:none;}
+
+            #top-header-bar{
+                background-color: orange;
+                width: 100%;
+                left: 0;
+                top: 0;
+
+            }
+
         </style>
         <script type="text/javascript">
             function showImg()
