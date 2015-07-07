@@ -19,6 +19,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <img id="background-img" src="img/background.jpg">
         <div id="top-header-bar">
             <aside style="width: 21.5rem; position: fixed">
                 <img id="menu_icon" src="img/menu_icon.jpg" class="show" style="width: 50px; height: 50px; align:top; align:left;" onmouseover="showImg()" onmouseout="hideImg()">
@@ -51,14 +52,25 @@
             .hide{display:none;}
 
             #top-header-bar{
-                background-color: orange;
+                background-color: white;
                 width: 100%;
                 position: fixed;
                 top: 0px;
                 right: 0px;
                 height: 50px;
                 z-index: -1;
+                opacity: 0.5;
+            }
 
+            #top-header-bar img {
+                /*opacity: 0;*/
+            }
+
+            #background-img{
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
             }
 
         </style>
