@@ -18,14 +18,27 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div>
+            <img id="background-img" src="img/background.jpg">
 
-        <img id="background-img" src="img/background.jpg">
-        <div id="top-header-bar">
-            <img id="menu_icon" src="img/menu_icon.jpg" class="show" style="width: 50px; height: 50px; align:top; align:left;" onmouseover="showImg()" onmouseout="hideImg()">
+            <div id="all-content">
+                <img src="img/SANIC.gif">
+                <img src="img/SANIC.gif">
+                <img src="img/SANIC.gif">
+                <img src="img/SANIC.gif">
+                <img src="img/SANIC.gif">
+            </div>
+
+            <div id="top-header-bar">
+                <img id="menu_icon" src="img/menu_icon.jpg" class="show" style="width: 50px; height: 50px; align:top; align:left;" onmouseover="showImg()" onmouseout="hideImg()">
+            </div>
+            <aside style="width: 21.5rem; position: fixed">
+                <img id="toolbar" src="img/toolbar.png" class="hide" onmouseover="showImg()" onmouseout="hideImg()">
+            </aside>
         </div>
-        <aside style="width: 21.5rem; position: fixed">
-            <img id="toolbar" src="img/toolbar.png" class="hide" onmouseover="showImg()" onmouseout="hideImg()">
-        </aside>
+
+
+
 
 
         <!-- Add your site or application content here -->
@@ -52,6 +65,11 @@
             .show{display:block;}
             .hide{display:none;}
 
+            #all-content{
+                margin: auto;
+                float: left;
+            }
+
             #toolbar{
                 position: fixed;
                 left: 0;
@@ -73,7 +91,7 @@
                 top: 0px;
                 right: 0px;
                 height: 50px;
-                z-index: -1;
+                /*z-index: -1;*/
                 opacity: 0.5;
             }
 
