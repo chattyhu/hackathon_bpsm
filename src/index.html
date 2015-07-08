@@ -21,12 +21,12 @@
         <div>
             <img id="background-img" src="img/background.jpg">
 
-            <div id="all-content">
-                <img src="img/SANIC.gif">
-                <img src="img/SANIC.gif">
-                <img src="img/SANIC.gif">
-                <img src="img/SANIC.gif">
-                <img src="img/SANIC.gif">
+            <div class="all-content">
+                <img class="content" src="img/Principle%201.png" style="display: inline">
+                <img class="content" src="img/content1.png" style="display: inline">
+                <!--<img src="img/SANIC.gif">-->
+                <!--<img src="img/SANIC.gif">-->
+                <!--<img src="img/SANIC.gif">-->
             </div>
 
             <div id="top-header-bar">
@@ -65,7 +65,13 @@
             .show{display:block;}
             .hide{display:none;}
 
-            #all-content{
+            .content{
+                /*background-color: #b3d4fc;*/
+                margin: 100px 100px 100px 100px;
+            }
+
+            .all-content{
+                text-align: center;
                 margin: auto;
                 float: left;
             }
@@ -74,7 +80,7 @@
                 position: fixed;
                 left: 0;
                 top: 50px;
-                opacity: 0.5;
+                opacity: 0.8;
             }
 
             #toolbar:hover{
@@ -92,7 +98,7 @@
                 right: 0px;
                 height: 50px;
                 /*z-index: -1;*/
-                opacity: 0.5;
+                opacity: 0.8;
             }
 
             #top-header-bar img {
