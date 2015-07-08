@@ -19,26 +19,32 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div>
-            <img id="background-img" src="img/background.jpg">
+            <div>
+                <img id="background-img" src="img/background2.jpg">
+            </div>
 
-            <div class="all-content">
+            <div class="content-row1" style="text-align: center">
                 <img class="content" src="img/Principle%201.png" style="display: inline">
-                <!--<img class="content1" src="img/contentbox.png" style="display: inline">-->
-                <!--<img class="content" src="img/content1.png" style="display: inline">-->
-                <!--<img src="img/SANIC.gif">-->
-                <!--<img src="img/SANIC.gif">-->
-                <!--<img src="img/SANIC.gif">-->
+                <div class="popup-notes">
+                    <img src="img/content1.png" style="display: inline">
+                </div>
             </div>
 
-            <div class="content1">
-                <img src="img/content1.png" style="display: inline">
+            <div class="content-row2" style="text-align: center">
+                <img class="content" src="img/Principle%201.png" style="display: inline">
+                <div class="popup-notes">
+                    <img src="img/content1.png" style="display: inline">
+                </div>
             </div>
+
+
+
 
             <div id="top-header-bar">
-                <img id="menu_icon" src="img/menu_icon.jpg" class="show" style="width: 50px; height: 50px; align:top; align:left;" onmouseover="showImg()" onmouseout="hideImg()">
+                <img id="menu_icon" src="img/menu_icon.jpg" class="show" style="width: 50px; height: 50px; align:top; align:left;" onmouseover="showToolbar()" onmouseout="hideToolbar()">
             </div>
             <aside style="width: 21.5rem; position: fixed">
-                <img id="toolbar" src="img/toolbar.png" class="hide" onmouseover="showImg()" onmouseout="hideImg()">
+                <img id="toolbar" src="img/toolbar.png" class="hide" onmouseover="showToolbar()" onmouseout="hideToolbar()">
             </aside>
         </div>
 
@@ -70,25 +76,54 @@
             .show{display:block;}
             .hide{display:none;}
 
-            .content{
-                /*background-color: #b3d4fc;*/
-                margin: 100px 100px 100px 100px;
+            .dark-overlay{
+                opacity: .9;
+                background-color: black;
+                position: absolute;
+                left: 0; top: 0; height: 50%; width: 50%;
             }
 
-            .content1{
-                /*background-color: #b3d4fc;*/
-                margin: 100px 100px 100px 100px;
+            .content{
+                text-align: center;
+                margin-left: 50px;
+                margin-right: 50px;
+                float: left;
+            }
+
+            .popup-notes {
+                text-align: center;
+                margin-left: 50px;
+                margin-right: 50px;
                 width: 375px;
                 height: 300px;
                 overflow: scroll;
                 overflow-x: hidden;
                 background-color: transparent;
+                float: left;
+
             }
 
-            .all-content{
+            .content-row1 {
                 text-align: center;
-                margin: auto;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-top: 200px;
+                margin-bottom: 200px;
                 float: left;
+                /*position: relative;*/
+                /*top: 50%;*/
+                /*transform: translateY(-50%);*/
+            }
+            .content-row2 {
+                text-align: center;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-top: 200px;
+                margin-bottom: 200px;
+                float: left;
+                /*position: relative;*/
+                /*top: 50%;*/
+                /*transform: translateY(-50%);*/
             }
 
             #toolbar{
@@ -131,7 +166,7 @@
 
         </style>
         <script type="text/javascript">
-            function showImg()
+            function showToolbar()
             {
                 var obj=document.getElementById('toolbar');
                 obj.className = 'show';
@@ -139,7 +174,7 @@
                 obj1.className = 'show';
             }
 
-            function hideImg()
+            function hideToolbar()
             {
                 var obj=document.getElementById('menu_icon');
                 obj.className = 'show';
